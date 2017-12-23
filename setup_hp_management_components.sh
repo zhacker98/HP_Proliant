@@ -21,7 +21,7 @@ curl http://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub | apt-key add 
 
 touch /etc/apt/sources.list.d/hpe_mgmt.list
 echo '# HPE Management Component Pack' >> /etc/apt/sources.list.d/hpe_mgmt.list
-echo 'deb http://downloads.linux.hpe.com/SDR/repo/mcp ${Dist}/${Project_Ver} non-free' >> /etc/apt/sources.list.d/hpe_mgmt.list
+echo "deb http://downloads.linux.hpe.com/SDR/repo/mcp ${Dist}/${Project_Ver} non-free" >> /etc/apt/sources.list.d/hpe_mgmt.list
 
 
 # MAIN
