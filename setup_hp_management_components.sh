@@ -13,6 +13,8 @@ Dist="stretch"
 Project_Ver="current"
 
 # PRE
+apt-get install -y -q curl
+
 echo 'Adding Public Keys for Debian'
 curl http://downloads.linux.hpe.com/SDR/hpPublicKey1024.pub | apt-key add -
 curl http://downloads.linux.hpe.com/SDR/hpPublicKey2048.pub | apt-key add -
